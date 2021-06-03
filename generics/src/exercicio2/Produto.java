@@ -2,7 +2,9 @@ package exercicio2;
 
 import java.util.Date;
 
-public class Produto<T>{
+import exercicio3.ProdutoX;
+
+public class Produto<T> extends ProdutoX{
     private T id;
     private float valor;
     private Date dataFabricacao;
@@ -34,7 +36,7 @@ public class Produto<T>{
     @Override
     public String toString() {
         return "Produto [dataFabricacao=" + dataFabricacao + ", dataVencimento=" + dataVencimento + ", id=" + id
-                + ", valor=" + valor + "]";
+                + ", valor=" + valor +", nome="+getNome()+"]";
     }
     
 }
